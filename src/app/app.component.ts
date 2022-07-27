@@ -8,6 +8,14 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 export class AppComponent implements OnInit {
   intervalSub;
 
+  getMin(a,b) {
+    if (a < b) {
+        return a;
+    }
+
+    return b;
+}
+
   ngOnInit() {
     this.intervalSub = setInterval(() => {
       console.log('Hello from ngOnInit');
