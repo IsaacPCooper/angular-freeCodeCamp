@@ -6,6 +6,7 @@ import { HelloWorldComponent } from './hello-world.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
